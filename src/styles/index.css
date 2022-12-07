@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media only screen and (max-width: 768px) {
+    html {
+        overflow: scroll !important;
+    }
+}
+    
+
+html {
+    overflow: hidden;
+}
+
+body {
+    font-family: "Inter", serif;
+    background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+}
