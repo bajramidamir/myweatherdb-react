@@ -20,7 +20,7 @@ const Main = () => {
     
     const searchCity = (e) => {
     if (e.key === "Enter") {
-        fetch(`${import.meta.env.VITE_API_BASE}weather?q=${query}&units=metric&APPID=${import.meta.env.VITE_API_KEY}`)
+        fetch(`${VITE_API_BASE}weather?q=${query}&units=metric&APPID=${VITE_API_KEY}`)
       .then(res => res.json())
       .then(result => {
         setWeather(result);
