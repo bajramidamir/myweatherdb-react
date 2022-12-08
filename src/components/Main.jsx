@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import weatherSvg from "/assets/weather.svg";
 
-
 const Main = () => {
     const [query, setQuery] = useState('');
     const [weather, setWeather] = useState({});
@@ -70,8 +69,6 @@ const Main = () => {
         ) : (
             <div className='pb-96'></div>
         )}
-
-        
     </div>
   )
 }
