@@ -1,11 +1,6 @@
 import React, { useState } from 'react';
 import weatherSvg from "/assets/weather.svg";
 
-const api = {
-    key: "3be5bb848a98ee3ef61a7da298e6cff6",
-    base: "https://api.openweathermap.org/data/2.5/"
-}
-
 
 const Main = () => {
     const [query, setQuery] = useState('');
@@ -23,9 +18,10 @@ const Main = () => {
         return `${day}, ${date} ${month}, ${year}` 
     }
 
+    
     const searchCity = (e) => {
     if (e.key === "Enter") {
-      fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
+        fetch(`${import.meta.env.VITE_API_BASE}weather?q=${query}&units=metric&APPID=${import.meta.env.VITE_API_KEY}`)
       .then(res => res.json())
       .then(result => {
         setWeather(result);
