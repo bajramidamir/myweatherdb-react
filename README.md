@@ -1,4 +1,4 @@
-# myweatherdb-react
+# MyWeatherDB
 
 A very simple and intuitive weather app.
 
